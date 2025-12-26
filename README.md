@@ -1,3 +1,3 @@
 # JavaScript-Practicing
 
-## This Repo is for documenting my CSS learning journey from ElzeroWebSchool
+## This Repo is for documenting my JavaScript learning journey from ElzeroWebSchool
