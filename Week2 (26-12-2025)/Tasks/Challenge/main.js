@@ -10,6 +10,10 @@ const markUp = `
 <span>${articleCode.Date}</span>
 </div>
 `;
-document.write(markUp);
-const edit = document.getElementById("heading");
-edit.insertAdjacentText("afterbegin", "Hello ");
+for (let i = 0; i < 4; i++) {
+	document.write(markUp);
+}
+const edit = document.querySelectorAll("#heading");
+edit.forEach((edit) => {
+	edit.insertAdjacentText("afterbegin", "Hello ");
+});
