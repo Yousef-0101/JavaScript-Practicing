@@ -10,7 +10,7 @@ console.log(num / 0.5); // 6
 console.log(num + num); // 6
 
 // Soultion Four
-console.log(num + +`${num}`); // 6
+console.log((num % (num + true)) * (num - true)); // 6
 
 // Solution Five
 console.log(num ** (!false + !false) - num); // 6
