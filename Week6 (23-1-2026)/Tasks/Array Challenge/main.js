@@ -27,3 +27,13 @@ console.log(
 	ze.charAt(my[zero].length - counter) +
 		ze.charAt(my.length - counter).toUpperCase(),
 ); // "rO"
+
+// Another Solution for the last two problems
+my.unshift("Elzero");
+my.length = 1;
+console.log(my.toString()); // "Elzero"
+
+console.log(
+	my.toString()[my.length + counter] +
+		my.toString()[my.toString().length - my.length].toUpperCase(),
+); // "rO"
