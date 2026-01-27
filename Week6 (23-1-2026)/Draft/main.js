@@ -32,7 +32,6 @@ console.log(oldFriends);
 /* Adding and Removing elements */
 // Adds elements to the start of the array
 oldFriends = ["Yousef", "Mohamed", "Ali", "Ahmed"];
-
 oldFriends.unshift("Osama", "Fares");
 console.log(oldFriends);
 
@@ -42,13 +41,11 @@ console.log(oldFriends);
 
 // Removes the first element from an array and returns it
 let first = oldFriends.shift();
-
 console.log(oldFriends);
 console.log(`First name is ${first}`);
 
 // Removes the last element from an array and returns it
 let last = oldFriends.pop();
-
 console.log(oldFriends);
 console.log(`Last name is ${last}`);
 
@@ -68,7 +65,6 @@ console.log(oldFriends.includes("Ahmed"));
 
 /* Sorting arrays */
 let unsortedArray = [1, -20, -2, -1, 6243, 3, -9, 9];
-
 console.log(unsortedArray);
 console.log(unsortedArray.reverse());
 console.log(unsortedArray.sort());
@@ -78,7 +74,6 @@ console.log(unsortedArray.reverse()); // Sorted and Reversed
 /* Slicing arrays */
 // Slicing returns a new array
 let willBeSliced = ["Ahmed", "Yousef", "Ali", "Khaled", "Said", "Moaz"];
-
 console.log(willBeSliced.slice(1));
 console.log(willBeSliced.slice(1, 4));
 console.log(willBeSliced.slice(-3));
@@ -86,7 +81,6 @@ console.log(willBeSliced.slice(-5, -2));
 
 // Splicing adds or removes elements (Start [Mand], DeleteCount [Opt], The Items To Add [Opt])
 let willBeSpliced = ["Ahmed", "Yousef", "Ali", "Khaled", "Said", "Moaz"];
-
 willBeSpliced.splice(1, 2, "Gamal", "Eslam");
 console.log(willBeSpliced);
 
@@ -96,9 +90,7 @@ let newFriends = ["Moaz", "Noor"];
 let schoolFriends = ["Mohamed", "Ahmed", "Salem"];
 
 let allFriends = myFriends.concat(newFriends, schoolFriends, "Osama");
-
 console.log(allFriends);
-
 console.log(allFriends.join());
 console.log(allFriends.join(""));
 console.log(allFriends.join(" - "));
