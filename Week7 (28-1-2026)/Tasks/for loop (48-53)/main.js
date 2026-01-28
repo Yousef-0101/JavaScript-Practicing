@@ -38,8 +38,36 @@ for (let i = index4; i > jump4; i -= jump4) {
 	console.log(i);
 }
 
-// Output
-// 10
-// 8
-// 6
-// 4
+// T5
+let friends5 = ["Ahmed", "Sayed", "Eman", "Mahmoud", "Ameer", "Osama", "Sameh"];
+let letter5 = "a";
+
+for (let i = letter5.length; i <= friends5.length; i++) {
+	if (
+		friends5[i - letter5.length].toString().startsWith(letter5.toUpperCase())
+	) {
+		friends5.splice(i - letter5.length, letter5.length);
+	}
+	console.log(`${i} => ${friends5[i - letter5.length]}`);
+}
+
+// T6
+let start6 = 0;
+let swappedName6 = "elZerO";
+let newstring6 = "";
+
+for (i = start6; i < swappedName6.length; i++) {
+	if (swappedName6[i].toUpperCase() === swappedName6[i])
+		newstring6 += swappedName6[i].toLowerCase();
+	else newstring6 += swappedName6[i].toUpperCase();
+}
+console.log(newstring6);
+
+// T7
+let start7 = 0;
+let mix7 = [1, 2, 3, "A", "B", "C", 4];
+
+for (i = start7; i < mix7.length; i++) {
+	if (mix7[i] === mix7[start7]) continue;
+	if (typeof mix7[i] === "number") console.log(mix7[i]);
+}
