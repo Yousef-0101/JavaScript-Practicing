@@ -3,7 +3,7 @@ function welcome(userName, age, gender) {
 }
 welcome("Yousef", 20, "male");
 
-function sayHello(userName, age, gender) {
+function sayHello(userName, age, gender = "male" /* default parameter */) {
 	let title;
 	if (gender === "male" || gender === "Male") title = "Mr.";
 	else title = "Mrs.";
@@ -12,6 +12,8 @@ function sayHello(userName, age, gender) {
 		console.log(`Welcome to Roblox ${title}${userName}. Go fishiiinngggg!!!!`);
 	else if (age >= 50) console.log("You Hag XD");
 }
+sayHello("Yousef", 20);
+sayHello("Yousef", 20, "female");
 sayHello("Yousef", 20, "male");
 
 function generateNumber(start, end, exclude) {
@@ -35,3 +37,13 @@ function sum(num1, num2) {
 
 sum(2, 4); // not outputed
 console.log(sum(2, 4)); // 6
+
+function restParametersSum(...numbers /* this is an array */) {
+	let reslut = 0;
+	for (let i = 0; i < numbers.length; i++) {
+		reslut += numbers[i];
+	}
+	return `Final result is ${reslut}`;
+}
+
+console.log(restParametersSum(12, 42, 51, 123, 2, 15));
