@@ -13,3 +13,25 @@ function sayHello(userName, age, gender) {
 	else if (age >= 50) console.log("You Hag XD");
 }
 sayHello("Yousef", 20, "male");
+
+function generateNumber(start, end, exclude) {
+	if (start > end) {
+		for (let i = start; i >= end; i--) {
+			if (i === exclude) continue;
+			console.log(i);
+		}
+	} else {
+		for (let i = start; i <= end; i++) {
+			if (i === exclude) continue;
+			console.log(i);
+		}
+	}
+}
+generateNumber(-2, 2, 0);
+
+function sum(num1, num2) {
+	return num1 + num2;
+}
+
+sum(2, 4); // not outputed
+console.log(sum(2, 4)); // 6

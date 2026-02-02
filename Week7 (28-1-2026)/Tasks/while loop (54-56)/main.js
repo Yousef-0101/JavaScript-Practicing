@@ -3,12 +3,9 @@ let index = 0;
 let counter = 0;
 
 while (index < friends.length) {
-	if (typeof friends[index] === "number" || friends[index].startsWith("A")) {
-		index++;
-		continue;
-	} else {
+	if (typeof friends[index] !== "number" && !friends[index].startsWith("A")) {
 		counter++;
 		console.log(`${counter} => ${friends[index]}`);
-		index++;
 	}
+	index++;
 }
