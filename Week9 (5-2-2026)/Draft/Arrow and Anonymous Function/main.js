@@ -55,11 +55,21 @@ console.log(sayMessage("Yousef", "Wahba"));
 
 // Arrow Function
 let print1 = () => {
-	return 10;
+	return 1;
 };
 console.log(print1());
 
 // If only one line you can write it like this:
-let print2 = () => 10;
+let print2 = () => 2;
 // let print2 = _ => 10; can also be done like this if there's no parameters
 console.log(print2());
+
+// let print3 = function (num) {
+// 	return num;
+// };
+let print3 = (num) => num;
+// let print3 = num => num; can also be done like this if there's only one parameter
+console.log(print3(3));
+
+let print4 = (num1, num2) => num1 + num2;
+console.log(print4(10, 4));
