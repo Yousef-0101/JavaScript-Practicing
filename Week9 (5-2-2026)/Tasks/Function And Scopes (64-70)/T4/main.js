@@ -1,12 +1,9 @@
 function specialMix(...data) {
-	let x = 0;
-	function sum(element) {
-		let num = parseInt(element);
-		if (!isNaN(num)) x += num;
-	}
-	data.forEach(sum);
-	if (x === 0) return "All Is Strings";
-	return x;
+	let sum = data.reduce(
+		(a, c) => (!isNaN(parseInt(c)) ? a + parseInt(c) : a),
+		0,
+	);
+	return sum !== 0 ? sum : "All Is Strings";
 }
 
 console.log(specialMix(10, 20, 30)); // 60

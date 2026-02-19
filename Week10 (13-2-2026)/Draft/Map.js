@@ -1,4 +1,4 @@
-// Map
+// Map calls a defined callback function on each element of an array, and returns an array that contains the results.
 let myNums = [1, 2, 3, 4, 5, 6];
 
 let addSelf = myNums.map(function (element) {
