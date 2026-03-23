@@ -10,7 +10,7 @@ one.onclick = function () {
 	document.links[0].click();
 };
 
-// DOM CLass List [lenght | contains | item(index) | add | remove | toggle]
+// DOM CLass List [length | contains | item(index) | add | remove | toggle]
 
 let element = document.getElementById("my-div");
 
