@@ -23,17 +23,17 @@ title.after(list);
 
 document.querySelector("*").style.boxSizing = "border-box";
 
-document.body.style.fontSize = "0.8rem";
 document.body.style.fontFamily = "arial";
 document.body.style.margin = "0";
 document.body.style.height = "100vh";
 
 header.style.display = "flex";
 header.style.justifyContent = "space-between";
+header.style.alignItems = "center";
 header.style.height = "7%";
-header.style.padding = "0.5em 1em";
+header.style.padding = "0 1em";
 
-title.style.margin = "0.4em 0";
+title.style.fontSize = "1.8rem";
 title.style.fontWeight = "800";
 title.style.color = "#23a96e";
 
@@ -66,7 +66,7 @@ for (let i = 0; i < 15; i++) {
 	product.style.color = "#727272";
 
 	span.style.marginBottom = "-0.4em";
-	span.style.fontSize = "1.5rem";
+	span.style.fontSize = "4rem";
 	span.style.color = "#000";
 }
 
@@ -76,9 +76,9 @@ document.body.appendChild(main);
 
 main.style.display = "grid";
 main.style.gridTemplate = "repeat(5, 1fr) / repeat(3, 1fr)";
-main.style.gap = "1em";
-main.style.height = "calc(86% - 3em)";
-main.style.padding = "1em";
+main.style.gap = "2em";
+main.style.height = "calc(86% - 4em)";
+main.style.padding = "2em";
 main.style.backgroundColor = "#ececec";
 
 // Footer
@@ -95,6 +95,6 @@ footer.style.display = "flex";
 footer.style.justifyContent = "center";
 footer.style.alignItems = "center";
 footer.style.height = "7%";
-footer.style.fontSize = "1rem";
+footer.style.fontSize = "2rem";
 footer.style.backgroundColor = "#23a96e";
 footer.style.color = "#fff";
