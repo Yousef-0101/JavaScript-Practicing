@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 100vh;
+}
+#div {
+	display: none;
+	margin: auto;
+	position: relative;
+	top: 40%;
+	text-align: center;
+	border: 2px solid #ddd;
+	width: 80%;
+	height: 7em;
+}
+span {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background-color: red;
+	color: white;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	cursor: pointer;
+}
