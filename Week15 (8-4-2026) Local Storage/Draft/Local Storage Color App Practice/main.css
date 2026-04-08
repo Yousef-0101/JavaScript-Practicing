@@ -1,0 +1,58 @@
+body {
+	margin: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+* {
+	border-radius: 6px;
+	box-sizing: border-box;
+}
+div {
+	margin: 2em 0;
+	width: 80%;
+}
+.container {
+	padding: 1em;
+	background-color: #85858550;
+}
+ul {
+	display: flex;
+	justify-content: space-around;
+	margin: 0;
+	padding: 0;
+}
+.active {
+	opacity: 100%;
+}
+[data-color="red"] {
+	background-color: red;
+	width: 4em;
+	height: 4em;
+}
+[data-color="green"] {
+	background-color: green;
+	width: 4em;
+	height: 4em;
+}
+[data-color="blue"] {
+	background-color: blue;
+	width: 4em;
+	height: 4em;
+}
+[data-color="black"] {
+	background-color: black;
+	width: 4em;
+	height: 4em;
+}
+li {
+	list-style: none;
+	cursor: pointer;
+	opacity: 50%;
+}
+.prev {
+	background-color: red;
+	height: 18em;
+}
