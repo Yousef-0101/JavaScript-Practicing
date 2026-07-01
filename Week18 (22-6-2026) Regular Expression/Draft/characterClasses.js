@@ -7,8 +7,8 @@
     -- \D => matches non-digit characters.
     -- \s => matches whitespace character.
     -- \S => matches non whitespace character.
-    \b => matches at the beginning or end of a word.
-    \B => matches NOT at the beginning/end of a word.
+    -- \b => matches at the beginning or end of a word.
+    -- \B => matches NOT at the beginning/end of a word.
 */
 
 let email = "O@@@g...com O@g.com O@g.net A@Y.com O-g.com o@s.org 1@1.com";
