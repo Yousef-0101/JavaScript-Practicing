@@ -20,6 +20,9 @@
     -- [abc] => Any of these characters
     -- [^abc] => Anything but these characters
     --- All the above can be letters, numbers or symbols
+
+    - replace
+    - replaceAll
 */
 
 let myString = "Hello Elzero Web School I Love elzero";
